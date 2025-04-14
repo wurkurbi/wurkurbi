@@ -8,17 +8,26 @@
       margin: 0;
       background: white;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
     }
+
     img {
-      max-width: 90%;
-      max-height: 90%;
+      width: 96px; /* approx. 1 inch wide */
+      height: auto;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <img src="WurkurbiYellow.png" alt="Wurkurbi logo">
+  <img src="WurkurbiBlue.png" alt="Floating blue bee">
 </body>
 </html>
+
